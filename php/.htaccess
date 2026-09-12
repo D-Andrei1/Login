@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Let real files and directories work normally
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Send everything else in /php through router.php
+RewriteRule ^ router.php [QSA,L]
