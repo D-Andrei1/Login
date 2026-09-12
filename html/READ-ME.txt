@@ -1,0 +1,3 @@
+Go to VSCODE settings and search php and go to "Edit in settings.json
+Set "php.validate.executablePath":, to ,"C:/xampp/php/php.exe",
+To access run xampp and go to http://localhost/website/
