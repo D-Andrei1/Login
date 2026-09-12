@@ -1,3 +1,38 @@
-Go to VSCODE settings and search php and go to "Edit in settings.json
-Set "php.validate.executablePath":, to ,"C:/xampp/php/php.exe",
-To access run xampp and go to http://localhost/website/
+# PHP Website Setup with XAMPP
+
+## 1. Set up the project
+
+Make sure **XAMPP** is installed.
+
+Create the following folder:
+
+```text
+C:\xampp\htdocs\website
+```
+
+Clone/pull the project repository into this folder so that the website files are located inside:
+
+```text
+C:\xampp\htdocs\website
+```
+
+## 2. Configure PHP in VS Code
+**Settings → Search for `PHP` → Edit in settings.json**
+
+Add or update the following setting:
+
+"php.validate.executablePath": "C:/xampp/php/php.exe"
+
+This tells VS Code to use the PHP installation included with XAMPP.
+
+## 3. Start the website
+
+Open the **XAMPP Control Panel** and start **Apache**.
+
+If the website uses a MySQL database, also start **MySQL**.
+
+Once Apache is running, open your browser and go to:
+
+```text
+http://localhost/website/
+```
