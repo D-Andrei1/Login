@@ -37,8 +37,8 @@ try {
         $_SESSION['logged_in'] = true;
         $_SESSION['first_name'] = $user['First_name'];
         $_SESSION['last_name'] = $user['Last_name'];
-        $_SERVER['username'] = $user['Username'];
-        $_SERVER['role'] = $user['Role'];
+        $_SESSION['username'] = $user['Username'];
+        $_SESSION['role'] = $user['Role'];
 
         echo json_encode([
             'success' => true,
