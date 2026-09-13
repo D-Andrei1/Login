@@ -1,5 +1,5 @@
 const form = document.getElementById("register")
-
+console.log("did something")
 form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
@@ -59,6 +59,8 @@ form.addEventListener("submit", async (event) => {
         }else if (!specialchar(password)) {
             answer.textContent = "Password must include a special character";
             return false;
+        }else {
+            return true;
         }
     };
 
