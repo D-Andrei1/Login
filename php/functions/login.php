@@ -53,7 +53,7 @@ try {
         echo json_encode([
             'success' => true,
             'message' => "You logged in.",
-            'role' => $_SERVER['role']
+            'role' => $_SESSION['role']
         ]);
     }
 
