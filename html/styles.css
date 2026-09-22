@@ -1,0 +1,379 @@
+body {
+    background-color: rgba(250, 217, 176, 0.733);
+    margin: 0;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+
+    background-color: rgb(255, 228, 196,0.75);
+
+    border-radius: 25px;
+
+    position: relative;
+
+    justify-content: space-between;
+}
+
+
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header_login_button {
+    background-color: beige;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.options {
+    display: flex;
+    flex:1;
+
+    justify-content: center;
+    align-items: center;
+
+    gap:30px;
+
+    margin: 30px;
+}
+
+.options a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: beige;
+
+
+    width: 20%;
+    height: 100%;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+    color: black;
+
+}
+
+.image_options {
+    display: flex;
+    justify-self: end;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+.image_options a img{
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+}
+
+.header_background {
+    background-image: url(/website/html/images/background.jfif);
+}
+
+/* Header */
+
+/* Home page */
+
+.home_page {
+    display: flex;
+
+    width: 100%;
+    height: 1000px;
+
+    justify-content: center;
+}
+
+.home_page_rewards {
+    display: flex;
+
+    width: 100%;
+    height: 400px;
+
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+}
+
+.home_page_rewards_text {
+    width: 50%;
+
+    transform: translateY(-75px);
+}
+
+.home_page_rewards_img {
+    width: 40%;
+
+    height: 100%;
+}
+
+.home_page_rewards_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.home_page_rewards_description {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.home_page_rewards_button {
+    display: flex;
+    justify-content: center;
+}
+
+.rewards_wrapper {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: end;
+}
+
+/* Home page
+
+/* Login page */
+
+.login_wrapper {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 600px;
+}
+
+.login button {
+    justify-self: center;
+}
+
+.forgot_password {
+    display: block;
+
+    text-decoration: none;
+    color: black;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.login_title {
+    display: block;
+
+    justify-self: center;
+
+    font-size: 50px;
+}
+
+.login_titles {
+    display: block;
+
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.login_button {
+    display: flex;
+    justify-content: center;
+}
+
+.login_button button {
+    background-color: beige;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.register_redirect {
+    position: relative;
+
+    margin: 20px;
+}
+
+.register_redirect a{
+    background-color: beige;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+
+    position: absolute;
+    right: -20px;
+}
+
+.login_form {
+    height: 100%;
+}
+
+.login_form input {
+    width: 300px;
+    height: 35px;
+
+    font-size: 15px;
+
+    background-color: white;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.login_form input:hover {
+    border-color: blanchedalmond;
+    background-color: white;
+}
+
+.login_form input:focus {
+    border-color: gray;
+    outline: gray;
+    background-color: white;
+}
+
+.password_wrap {
+    position: relative;
+}
+
+.password_toggle{
+    height: 20px;
+    width: 20px;
+    
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+    position: absolute;
+
+    transform: translateY(-35px);
+
+    cursor: pointer;
+
+    right: 5px;
+}
+
+.password_toggle img {
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+
+.login_answer {
+    display: block;
+}
+
+.login_answer {
+    display: flex;
+    justify-content: center;
+}
+
+/* Login page */
+
+/* Registration form */
+
+.registration_wrapper {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 700px;
+}
+
+.registration_title {
+    display: block;
+
+    justify-self: center;
+
+    font-size: 50px;
+}
+
+
+.registration_titles {
+    display: block;
+
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.registration_names {
+    display: flex;
+}
+
+.registration_last_name {
+    margin-left: 20px;
+}
+
+.registration_form input{
+    width: 250px;
+    height: 25px;
+
+    font-size: 15px;
+
+    background-color: white;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.registration_form input:hover {
+    border-color: blanchedalmond;
+    background-color: white;
+}
+
+.registration_form input:focus {
+    border-color: gray;
+    outline: gray;
+    background-color: white;
+}
+
+.registration_passwords {
+    display: flex;
+}
+
+.registration_confirm_password {
+    margin-left: 20px;
+}
+
+.registration_answer {
+    display: flex;
+    justify-content: center;
+}
+
+.registration_button {
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 50px;
+}
+
+.registration_button button {
+    background-color: beige;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+
+    height: 50px;
+    width: 100px;
+}
+/* Registration form */

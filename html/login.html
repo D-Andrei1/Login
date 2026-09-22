@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/website/html/styles.css">
+    <title>My Website</title>
+</head>
+
+<body>
+    <div id="header"></div>
+    <script src="/website/js/login_logo.js" defer></script>
+    <script src="/website/js/show_header.js" defer></script>
+
+    <div class="login_wrapper">
+        <form class="login_form" id="login_form">
+            <p class="login_title">Login</p>
+
+            <label for="email" class="login_titles">Email</label><br>
+            <input type="email" id="email" name="email"></input><br>
+
+            <label for="password" class="login_titles">Password</label><br>
+            <div class="password_wrap">
+                <input class="login_input" type="password" id="password" name="password"></input><br>
+                <button type="button" id="password_toggle" class="password_toggle">
+                    <img id="password_toggle_img" src="/website/html/images/covered_sun.png">
+                </button>
+            </div>
+
+            <a class="forgot_password" href="/website/html/forgot_password.html">I my forgot password</a>
+            
+            <div class="login_answer">
+                <p id="answer"></p>
+            </div>
+
+            <div class="login_button">
+                <button type="submit" value="Login">Login</button>
+            </div>
+            
+            <div class="register_redirect">
+                <a href="/website/html/create_account.html">Register here!</a>
+            </div>
+
+        </form>
+
+    </div>
+
+    <script src="../js/login.js"></script>
+    <script src="../js/toggle_password_show.js"></script>
+</body>
+
+</html>

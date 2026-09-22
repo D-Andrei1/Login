@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/website/html/styles.css">
+        <title>My Website</title>
+    </head>
+
+    <body>
+        <div id="header"></div>
+        <script src="/website/js/login_logo.js" defer></script>
+        <script src="/website/js/show_header.js" defer></script>
+
+        <div class="registration_wrapper">
+            <form id="register" class="registration_form">
+                <p class="registration_title">Make an account</p>
+                
+                <label for="email" class="registration_titles">Email</label><br>
+                <input type="email" id="email" name="email"></input><br>
+
+                <div class="registration_names">
+                    <div class="registration_first_name">
+                        <label for="fname" class="registration_titles">First Name</label><br>
+                        <input type="text" id="fname" name="fname"></input><br>
+                    </div>
+
+                    <div class="registration_last_name">
+                        <label for="lname" class="registration_titles">Last Name</label><br>
+                        <input type="text" id="lname" name="lname"></input><br>
+                    </div>
+                </div>
+
+
+                <label for="uname" class="registration_titles">User name</label><br>
+                <input type="text" id="uname" name="uname"></input><br>
+                
+                <div class="registration_passwords">
+                    <div class="registration_password">
+                        <label for="password" class="registration_titles">Password</label><br>
+                        <input type="password" id="password" name="password"></input><br>
+                    </div>
+
+                    <div class="registration_confirm_password">
+                        <label for="confirm_password" class="registration_titles">Confirm Password</label><br>
+                        <input type="password" id="confirm_password" name="confirm_password"></input><br> 
+                    </div>
+                </div>
+
+                <div class="registration_answer">
+                    <p id="answer"></p>
+                </div>
+
+                <div class="registration_button">
+                    <button type="submit" value="Register">Register</button>
+                </div>
+            </form>
+        </div>
+
+        <script src="../js/create_account.js"></script>
+    </body>
+</html>
