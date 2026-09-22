@@ -91,7 +91,6 @@ body {
     display: flex;
 
     width: 100%;
-    height: 1000px;
 
     justify-content: center;
 }
@@ -400,3 +399,44 @@ body {
     width: 100px;
 }
 /* Registration form */
+
+/* Footer */
+
+.footer {
+    background-color: rgb(166, 109, 33);
+    color: white;
+    padding: 40px 60px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-brand h3 {
+    margin: 0 0 10px;
+}
+
+.footer-brand p,
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
