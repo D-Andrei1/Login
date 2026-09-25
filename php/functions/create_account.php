@@ -10,6 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
     exit;
 }
+
 try {
     $email = $_POST['email'];
     $password = $_POST['password'];
