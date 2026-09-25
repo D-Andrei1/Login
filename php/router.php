@@ -11,7 +11,7 @@ if (str_starts_with($path, $basePath)) {
 }
 
 if (str_starts_with($path, '/api/')) {
-    require __DIR__ . '/index.php';
+    require __DIR__ . '/api_router.php';
     exit;
 }
 
