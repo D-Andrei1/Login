@@ -23,6 +23,14 @@ switch ($path) {
         require __DIR__ . '\functions\logout.php';
         break;
 
+    case '/api/register_loyalty':
+        require __DIR__ . '\functions\create_rewards_account.php';
+        break;
+        
+    case '/api/check_point_balance':
+        require __DIR__ . '\functions\check_points_balance.php';
+        break;    
+        
     default:
         http_response_code(404);
 

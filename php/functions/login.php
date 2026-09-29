@@ -41,6 +41,23 @@ try {
     } else {
 
         session_regenerate_id(true);
+        // Get the loyalty account ID, if one exists
+        $stmt = $pdo->prepare("
+            SELECT account_id
+            FROM loyalty_accounts
+            WHERE UserId = :UserId
+            LIMIT 1
+        ");
+
+        $stmt->execute([
+            ':UserId' => $_SESSION['user_id']
+        ]);
+
+        $rewards_account_id = $stmt->fetchColumn();
+
+        if ($rewards_account_id !== false) {
+            $_SESSION['account_id'] = $rewards_account_id;
+        }
 
         $_SESSION['user_id'] = $user['UserId'];
         $_SESSION['email'] = $email;

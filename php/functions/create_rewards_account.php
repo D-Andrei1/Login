@@ -20,6 +20,8 @@ if (isset($_SESSION['user_id'])){
 
         $rewards_account_id = $stmt->fetchColumn();
 
+        $_SESSION['account_id'] = $rewards_account_id;
+        
         echo json_encode([
             'success' => true,
             'message' => "Account created with ID $rewards_account_id"
