@@ -45,12 +45,12 @@ try {
         $stmt = $pdo->prepare("
             SELECT account_id
             FROM loyalty_accounts
-            WHERE UserId = :UserId
+            WHERE UserId = :Userid
             LIMIT 1
         ");
 
         $stmt->execute([
-            ':UserId' => $_SESSION['user_id']
+            ':Userid' => $_SESSION['user_id']
         ]);
 
         $rewards_account_id = $stmt->fetchColumn();

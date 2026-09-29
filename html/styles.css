@@ -542,8 +542,10 @@ body {
     transition: 0.3s;
 }
 
-.rewards-btn:hover {
-    background: #a96c2f;
+.rewards-btn button {
+    background-color: rgb(212, 175, 55,0);
+    outline-color: rgb(212, 175, 55,0);
+    border-color: rgb(212, 175, 55,0);
 }
 
 .rewards-points {
