@@ -5,19 +5,21 @@ function check_session() {
         .then(response => response.json())
         .then(data => {
             if (data.account_id != null) {
-                console.log("ooo")
-                
-                description.innerHTML = `
-                    <p id="points"></p>
-                `
                 points()
             } else{
                 console.log("ok")
                 description.innerHTML = `
-                    <button id="rewards-btn">
+                    <button id="rewards-btn" class=rewards-btn>
                         Sign up
                     </button>
                 `;
+
+                const register = document.getElementById("rewards-btn")
+
+                register.addEventListener("click", () => {
+                    console.log("ew")
+                    fetch("/website/php/api/register_loyalty")
+                })
             }
         })
 }
@@ -33,10 +35,3 @@ function points() {
             points.textContent = point_balance
         })
 }
-/*
-const register_btn = document.getElementById("rewards-btn");
-register_btn.addEventListener("click", () => {
-    fetch("/website/php/api/register_loyalty")
-        .then(response => response.json())
-        .then(data => {
-        console.log(data)}) */

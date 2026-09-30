@@ -10,8 +10,6 @@ body {
 
     background-color: rgb(255, 228, 196,0.75);
 
-    border-radius: 25px;
-
     position: relative;
 
     justify-content: space-between;
@@ -538,9 +536,7 @@ body {
     background: #c88a42;
     color: white;
     text-decoration: none;
-    border-radius: 50px;
-    transition: 0.3s;
-}
+    border-radius: 50px;}
 
 .rewards-btn button {
     background-color: rgb(212, 175, 55,0);
@@ -686,3 +682,85 @@ body {
 }
 
 /* Rewards page */
+
+/* Menu page */
+
+.menu-page {
+    display: flex;
+
+    background-color: rgb(235, 235, 235);
+
+    height: auto;
+}
+
+.side_menu_selector {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    width: 20%;
+    height: 100%;
+
+    margin: 20px;
+    margin-top: 0px;
+
+    padding: 20px;
+}
+
+.side_menu_selector input {
+    background-color: rgb(180, 179, 178);
+
+    height: 7%;
+
+    font-size: 15px;
+
+    outline: black;
+    border: black;
+
+    border-radius: 25px;
+}
+
+.side_menu_selector button {
+    height: 5%;
+    width: 50%;
+
+    border-radius: 25px;
+
+    margin: 10px;
+}
+
+.menu_items {
+    height: 100%;
+    width: 80%;
+
+    padding-right: 50px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  
+  padding-top: 20px;
+}
+
+.menu-item {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  background: white;
+}
+
+.menu-item h3 {
+  margin-top: 0;
+}
+
+.menu-item span {
+  font-weight: bold;
+}
+
+.menu_images {
+    width: 100%;
+    height: 200px;
+}

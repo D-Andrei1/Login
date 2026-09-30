@@ -41,6 +41,16 @@ try {
     } else {
 
         session_regenerate_id(true);
+
+
+        $_SESSION['user_id'] = $user['UserId'];
+        $_SESSION['email'] = $email;
+        $_SESSION['logged_in'] = true;
+        $_SESSION['first_name'] = $user['First_name'];
+        $_SESSION['last_name'] = $user['Last_name'];
+        $_SESSION['username'] = $user['Username'];
+        $_SESSION['role'] = $user['Role'];
+
         // Get the loyalty account ID, if one exists
         $stmt = $pdo->prepare("
             SELECT account_id
@@ -58,15 +68,6 @@ try {
         if ($rewards_account_id !== false) {
             $_SESSION['account_id'] = $rewards_account_id;
         }
-
-        $_SESSION['user_id'] = $user['UserId'];
-        $_SESSION['email'] = $email;
-        $_SESSION['logged_in'] = true;
-        $_SESSION['first_name'] = $user['First_name'];
-        $_SESSION['last_name'] = $user['Last_name'];
-        $_SESSION['username'] = $user['Username'];
-        $_SESSION['role'] = $user['Role'];
-
         echo json_encode([
             'success' => true,
             'message' => "You logged in.",
