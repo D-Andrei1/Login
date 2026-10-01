@@ -565,43 +565,6 @@ body {
     margin-bottom: 8px;
 }
 
-.rewards-tiers {
-    padding: 60px 10%;
-    text-align: center;
-}
-
-.rewards-tiers h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-}
-
-.rewards-tier-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
-    gap: 25px;
-}
-
-.rewards-tier {
-    background: white;
-    padding: 35px;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,.08);
-}
-
-.rewards-tier h3 {
-    margin-bottom: 10px;
-}
-
-.rewards-tier ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-}
-
-.rewards-tier li {
-    margin: 12px 0;
-}
-
 .bronze { border-top: 6px solid #a97142; }
 .silver { border-top: 6px solid #b9c3cc; }
 .gold { border-top: 6px solid #d4af37; }
@@ -622,15 +585,19 @@ body {
     gap: 25px;
 }
 
+.rewards-grid button {
+    background-color: white;
+    transition: 0.3s;
+}
+
 .reward-item {
     background: white;
     border-radius: 18px;
     overflow: hidden;
     box-shadow: 0 8px 20px rgba(0,0,0,.08);
-    transition: 0.3s;
 }
 
-.reward-item:hover {
+.rewards-grid button:hover {
     transform: translateY(-8px);
 }
 

@@ -21,13 +21,13 @@
                 <p>Earn points with every sip and unlock delicious perks.</p>
                 <div id="rewards_description">
 
-                </dv>
-            </div>
+                    </dv>
+                </div>
         </section>
 
         <section class="rewards-points">
             <div class="rewards-card">
-                <h2 id="points">250</h2>
+                <h2 id="points"></h2>
                 <p>Your Reward Points</p>
             </div>
 
@@ -38,40 +38,7 @@
 
             <div class="rewards-card">
                 <h2>Next Reward</h2>
-                <p>Free Latte at 300 pts</p>
-            </div>
-        </section>
-
-        <section class="rewards-tiers">
-            <h2>Membership Tiers</h2>
-
-            <div class="rewards-tier-grid">
-                <div class="rewards-tier bronze">
-                    <h3>Bronze</h3>
-                    <p>0–299 pts</p>
-                    <ul>
-                        <li>Birthday Drink</li>
-                        <li>Exclusive Offers</li>
-                    </ul>
-                </div>
-
-                <div class="rewards-tier silver">
-                    <h3>Silver</h3>
-                    <p>300–799 pts</p>
-                    <ul>
-                        <li>Free Drink</li>
-                        <li>Double Point Days</li>
-                    </ul>
-                </div>
-
-                <div class="rewards-tier gold">
-                    <h3>Gold</h3>
-                    <p>800+ pts</p>
-                    <ul>
-                        <li>Free Monthly Drink</li>
-                        <li>VIP Discounts</li>
-                    </ul>
-                </div>
+                <p id="next_reward"></p>
             </div>
         </section>
 
@@ -79,30 +46,34 @@
             <h2>Redeem Your Points</h2>
 
             <div class="rewards-grid">
-                <div class="reward-item">
-                    <AsyncImage query="espresso coffee in cup" aspectRatio="4:3" maxHeight=220 radius=none />
-                    <h3>Free Espresso</h3>
-                    <span>150 pts</span>
-                </div>
+                <button id="reward_1">
+                    <div class="reward-item">
+                        <h3>Free single Espresso</h3>
+                        <span>150 pts</span>
+                    </div>
+                </button>
 
-                <div class="reward-item">
-                    <AsyncImage query="latte coffee art in mug" aspectRatio="4:3" maxHeight=220 radius=none />
-                    <h3>Free Latte</h3>
-                    <span>300 pts</span>
-                </div>
+                <button id="reward_2">
+                    <div class="reward-item">
+                        <h3>Free Vanilla Latte</h3>
+                        <span>300 pts</span>
+                    </div>
+                </button>
 
-                <div class="reward-item">
-                    <AsyncImage query="coffee and pastry on wooden table" aspectRatio="4:3" maxHeight=220 radius=none />
-                    <h3>Pastry & Coffee</h3>
-                    <span>500 pts</span>
-                </div>
+                <button id="reward_3">
+                    <div class="reward-item">
+                        <h3>Iced Caramel Coffee</h3>
+                        <span>500 pts</span>
+                    </div>
+                </button>
+
             </div>
         </section>
 
         <section class="rewards-cta">
             <h2>Every Cup Brings You Closer</h2>
             <p>Collect points every time you order and enjoy exclusive rewards.</p>
-            <a href="#" class="rewards-btn">Start Earning</a>
+            <a href="/website/html/menu.html" class="rewards-btn">Start Earning</a>
         </section>
 
         <script src="/website/js/rewards_page.js"></script>

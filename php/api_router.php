@@ -38,7 +38,11 @@ switch ($path) {
     case '/api/add_to_basket':
         require __DIR__ . '\functions\add_to_basket.php';
         break;
-        
+    
+    case '/api/subtract_points':
+        require __DIR__ . '\functions\subtract_points.php';
+        break;
+
     default:
         http_response_code(404);
 

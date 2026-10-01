@@ -10,32 +10,31 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
     exit;
 }
-if (!isset($_SESSION['user_id'])){
+if(!isset($_SESSION['user_id']) || !isset($_SESSION['account_id'])){
     echo json_encode([
         'success' => false,
         'message' => "User isnt logged in."
     ]);
 
     exit;
-} else{
+}else{
     try {
-        $product_id = $_POST['product_id'];
-        $quantity = $_POST['quantity'];
+    $point_reduction = $_POST['point_reduction'];
 
         $stmt = $pdo->prepare("
-            INSERT INTO basket (user_id, product_id, quantity)
-            VALUES (:UID, :PID, :q)
-            ON DUPLICATE KEY UPDATE quantity = quantity + :q;
+            UPDATE loyalty_accounts
+            SET points_balance = points_balance - :point_reduction
+            WHERE account_id = :id;
         ");
+
         $stmt->execute([
-            ':UID' => $_SESSION['user_id'],
-            ':PID' => $product_id,
-            ':q' => $quantity
+            ':point_reduction' => $point_reduction,
+            ':id' => $_SESSION['account_id']
         ]);
 
         echo json_encode([
             'success' => true,
-            'message' => "Item $product_id added to basket"
+            'message' => "Points subtracted."
         ]);
 
     } catch(PDOException $e){
