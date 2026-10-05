@@ -1,7 +1,10 @@
 fetch("/website/php/api/check_session",{
     credentials: "same-origin"
 })
-    .then(response => response.json())
+    .then(response => {
+        check_error(response)
+        return response.json()
+    })
     .then(data => {
         if (data.logged_in) {
             document.getElementById("welcome").textContent =

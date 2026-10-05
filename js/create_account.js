@@ -84,7 +84,10 @@ form.addEventListener("submit", async (event) => {
                     '&last_name=' + encodeURIComponent(last_name) +
                     '&username=' + encodeURIComponent(username)
             })
-            .then(res => res.json())
+            .then(response => {
+                check_error(response)
+                return response.json()
+            })
             .then(response => {
                 console.log(response);
 

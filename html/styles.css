@@ -731,3 +731,70 @@ body {
     width: 100%;
     height: 200px;
 }
+
+/* User settings */
+
+.account-page {
+    width: 90%;
+    max-width: 550px;
+    margin: 50px auto;
+    color: #2f241f;
+}
+
+.account-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.account-form {
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.account-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.account-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 20px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+.account-input:focus {
+    outline: none;
+    border-color: #6f4e37;
+}
+
+.account-save-button {
+    width: 100%;
+    padding: 12px;
+
+    background-color: #6f4e37;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.account-save-button:hover {
+    background-color: #563a29;
+}
+
+.account-message {
+    text-align: center;
+    margin-top: 20px;
+}

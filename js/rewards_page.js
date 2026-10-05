@@ -2,7 +2,10 @@ function check_session() {
     const description = document.getElementById("rewards_description")
 
     fetch("/website/php/api/check_session")
-        .then(response => response.json())
+        .then(response => {
+            check_error(response)
+            return response.json()
+        })
         .then(data => {
             if (data.account_id != null) {
                 points()
@@ -104,7 +107,10 @@ function add_to_basket(product_id, quantity) {
         body: 'product_id=' + encodeURIComponent(product_id) +
         '&quantity=' + encodeURIComponent(`${quantity}`)
     })
-    .then(response => response.json())
+    .then(response => {
+        check_error(response)
+        return response.json()
+    })
     .then(data => {
         console.log(data)
     })
@@ -118,7 +124,10 @@ function reduce_points(point_reduction) {
         },
         body: 'point_reduction=' + encodeURIComponent(point_reduction)
     })
-    .then(response => response.json())
+    .then(response => {
+        check_error(response)
+        return response.json()
+    })
     .then(data => {
         console.log(data)
     })

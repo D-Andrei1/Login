@@ -23,7 +23,10 @@ form.addEventListener("submit", async (event) =>{
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: 'email=' + encodeURIComponent(email) + '&password=' + encodeURIComponent(password)
             })
-            .then(res => res.json())
+            .then(response => {
+                check_error(response)
+                return response.json()
+            })
             .then(response => {
                 console.log(response)
 

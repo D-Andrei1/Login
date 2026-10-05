@@ -6,7 +6,10 @@ function func_logout(){
     fetch("/website/php/api/logout", {
         method: "POST"
     })
-    .then(response => response.json())
+    .then(response => {
+        check_error(response)
+        return response.json()
+    })
     .then(() => {
         window.location.href = "login.html";
     });

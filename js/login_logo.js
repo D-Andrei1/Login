@@ -1,6 +1,9 @@
 function loadLoginLogo() {
     fetch("/website/php/api/check_session")
-        .then(response => response.json())
+        .then(response => {
+                check_error(response)
+                return response.json()
+            })
         .then(data => {
             const loginArea = document.getElementById("login_area");
 
