@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Error - Something Went Wrong</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <main id="error-page-wrapper">
+
+    <section id="error-page-card" role="alert">
+
+      <div id="error-icon">
+        !
+      </div>
+
+      <div id="error-code">
+        ERROR 500
+      </div>
+
+      <h1 id="error-title">
+        Something went wrong
+      </h1>
+
+      <p id="error-message">
+        We're sorry, but something unexpected happened.
+        Please try again later.
+      </p>
+
+      <div id="error-actions">
+        <button id="error-retry-button" type="button" onclick="location.reload()">
+          Try Again
+        </button>
+
+        <a id="error-home-button" href="/website/index.html">
+          Go Home
+        </a>
+      </div>
+
+      <p id="error-reference">
+        Error reference: <span id="error-reference-id">ERR-500</span>
+      </p>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
