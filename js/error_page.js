@@ -7,7 +7,5 @@ function check_error(response){
     ]
     if (error_codes.includes(response.status)){
         window.location.href = error_page_path
-    } else if(!response.json().success){
-        window.location.href = error_page_path 
     }
 }
